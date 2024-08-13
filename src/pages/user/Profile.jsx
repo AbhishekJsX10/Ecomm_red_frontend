@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import UserMenu from "../../components/Layout/UserMenu";
+import UserMenu from "../../components/layout/UserMenu";
 import { useAuth } from "../../context/auth";
 import { toast } from "react-toastify";
 import axios from "axios";
