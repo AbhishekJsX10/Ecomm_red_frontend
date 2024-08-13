@@ -91,7 +91,7 @@ const CartPage = () => {
               >
                 <div className="md:w-1/4">
                   <img
-                    src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                    src={`https://ecomm-red.onrender.com/api/v1/product/product-photo/${p._id}`}
                     className="w-full h-32 object-cover rounded-lg"
                     alt={p.name}
                   />

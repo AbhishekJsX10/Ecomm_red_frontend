@@ -22,7 +22,7 @@ const Search = () => {
         {values?.results.map((p) => (
           <div key={p._id} className="bg-zinc-800 rounded-lg shadow-lg overflow-hidden">
             <img
-              src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+              src={`https://ecomm-red.onrender.com/api/v1/product/product-photo/${p._id}`}
               className="w-full h-48 object-cover"
               alt={p.name}
             />

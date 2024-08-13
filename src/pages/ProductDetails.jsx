@@ -16,7 +16,7 @@ const ProductDetails = () => {
   const getProduct = async () => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/get-product/${params.slug}`
+        `https://ecomm-red.onrender.com/api/v1/product/get-product/${params.slug}`
       );
       setProduct(data?.product);
       getSimilarProduct(data?.product._id, data?.product.category._id);
@@ -28,7 +28,7 @@ const ProductDetails = () => {
   const getSimilarProduct = async (pid, cid) => {
     try {
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/product/related-product/${pid}/${cid}`
+        `https://ecomm-red.onrender.com/api/v1/product/related-product/${pid}/${cid}`
       );
       setRelatedProducts(data?.products);
     } catch (error) {
@@ -41,7 +41,7 @@ const ProductDetails = () => {
       <div className="flex flex-col md:flex-row bg-zinc-800 rounded-lg shadow-lg overflow-hidden">
         <div className="md:w-1/2 p-4">
           <img
-            src={`http://localhost:8080/api/v1/product/product-photo/${product._id}`}
+            src={`https://ecomm-red.onrender.com/api/v1/product/product-photo/${product._id}`}
             alt={product.name}
             className="w-full h-auto object-cover"
           />
@@ -82,7 +82,7 @@ const ProductDetails = () => {
               className="bg-zinc-700 p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             >
               <img
-                src={`http://localhost:8080/api/v1/product/product-photo/${p?._id}`}
+                src={`https://ecomm-red.onrender.com/api/v1/product/product-photo/${p?._id}`}
                 alt={p.name}
                 className="w-full h-48 object-cover rounded"
               />

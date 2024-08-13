@@ -8,7 +8,7 @@ import About from "./pages/About"
 import Contact from "./pages/Contact"
 import Policy from "./pages/Policy"
 import PageNotFound from "./pages/PageNotFound"
-import Register from './pages/Auth/Register.Jsx'
+import Register from './pages/Auth/Register'
 import Login from './pages/Auth/Login'
 import Dashboard from './pages/user/Dashboard'
 import PrivateRoute from "./components/Private/Private"

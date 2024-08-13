@@ -85,7 +85,7 @@ const Register = () => {
 
     if (validateForm()) {
       try {
-        const res = await axios.post(`http://localhost:8080/api/v1/auth/register`,{
+        const res = await axios.post(`https://ecomm-red.onrender.com/api/v1/auth/register`,{
           name: formData.name,
           email: formData.email,
           password: formData.password,

@@ -11,7 +11,7 @@ const Products = () => {
   // Get all products
   const getAllProducts = async () => {
     try {
-      const { data } = await axios.get("http://localhost:8080/api/v1/product/get-product");
+      const { data } = await axios.get("https://ecomm-red.onrender.com/api/v1/product/get-product");
       setProducts(data.products);
       console.log(data);
     } catch (error) {
@@ -42,7 +42,7 @@ const Products = () => {
             >
               <div className="bg-zinc-700 text-zinc-100 rounded-lg shadow-lg overflow-hidden h-full flex flex-col">
                 <img
-                  src={`http://localhost:8080/api/v1/product/product-photo/${p._id}`}
+                  src={`https://ecomm-red.onrender.com/api/v1/product/product-photo/${p._id}`}
                   className="w-full h-48 object-cover"
                   alt={p.name}
                 />
